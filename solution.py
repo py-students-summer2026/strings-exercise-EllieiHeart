@@ -11,6 +11,7 @@ def get_adj():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
+    word = input("Enter a adjctive: ")
 
     # don't modify the return statement below...
     return word
@@ -22,6 +23,7 @@ def get_verb():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
+    word = input("Enter a verb: ")
 
     # don't modify the return statement below... leave it as the last line in this function
     return word
@@ -33,6 +35,7 @@ def get_plural_noun():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
+    word = input("Enter a plural noun: ")
 
     # don't modify the return statement below... leave it as the last line in this function
     return word
@@ -44,7 +47,7 @@ def get_proper_noun():
       :returns: the text entered by the user
     """
     # write your code for this function below this line
-
+    word = input("Enter a proper noun (the name of a location, person, or event): ")
     # don't modify the return statement below... leave it as the last line in this function
     return word
 
@@ -63,10 +66,16 @@ def generate():
     Then plug these into the Jaberwocky poem according to the given template and print it out.
     """
 
-    # write your code for this function below this line...
-    # feel free to modify the given poem code and add any additional code as necessary
+    adjective_1 = get_adj()
+    adjective_2 = get_adj()
+    verb_1 = get_verb()
+    verb_2 = get_verb()
+    plural_noun_1 = get_plural_noun()
+    plural_noun_2 = get_plural_noun()
+    proper_noun_1 = get_proper_noun()
+    proper_noun_2 = get_proper_noun()
 
-    poem = """
+    poem = f"""
     'Twas {adjective_1}, and the slithy toves
     Did {verb_1} and gimble in the wabe;
     All {adjective_2} were the borogoves,
@@ -76,7 +85,7 @@ def generate():
     The jaws that {verb_2}, the {plural_noun_2} that catch!
     Beware the Jubjub bird, and shun
     The frumious {proper_noun_2}!
-  """
+    """
 
     # don't modify the print statement below... leave it as the last line in this function
     print(poem)
